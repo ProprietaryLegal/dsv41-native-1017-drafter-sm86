@@ -1,0 +1,4 @@
+fusedmoe.cu adapts the fragment prepack, prmt decoder and MMA mapping of ro99/strata's
+kernels/cuda/detail/backend_kernels.cuh at commit 015b075079c51a7aec670ee24924f920f5e7bb2b
+(via kernels/mxfp4/regfed.cu), licensed under Apache-2.0.
+Source: https://github.com/ro99/strata . Original license: LICENSE.strata.

@@ -1,0 +1,13 @@
+PLI Labs — dsv41-native-1017-drafter-sm86
+Copyright 2026 Proprietary Legal Intelligence LLC
+
+PLI Labs additions: Apache-2.0; full text: LICENSES/Apache-2.0.txt.
+
+Included third-party-derived source and patch inventory:
+
+- ro99/strata, Apache-2.0: fragment prepack, register decode and MMA mapping adapted in code/offload/dspark/kernels/mxfp4/regfed.cu, kernels/fp8dense/dense.cu and kernels/fusedmoe/fusedmoe.cu. Full text: LICENSES/strata-Apache-2.0.txt; identical local LICENSE.strata texts and component NOTICE files are retained in all three kernel directories. The notices identify the donor revision and adaptations for graph-safe routing, BF16 activation loads, signed zero, caller-owned storage and fused pipelines. Source: https://github.com/ro99/strata .
+- vLLM/HeNryous EXL3 plugin, Apache-2.0: code/offload/dspark/worker/exl3/{plan.py,bank.py,kernels.py,hostcopy.py,exl3_ref.py}. Copyright contributors to the vLLM project. Full text: LICENSES/Apache-2.0.txt. SPDX headers and VENDORED.md identify the source plugin; file-level headers describe reference and adaptation work.
+- turboderp/exllamav3, MIT: the included code/offload/dspark/worker/exl3/exllamav3_facc.patch changes SM86 accumulator selection and extension naming. worker/exl3/exl3_ref.py derives reference arithmetic from the same runtime. Copyright (c) 2025 Turboderp. Full text: LICENSES/exllamav3-MIT.txt. The external runtime, donor headers and full engine are not included. worker/tools/cuda_exl3_decode.cu includes externally supplied donor headers.
+- DeepSeek's official formats and inference arithmetic, MIT: code/offload/dspark/native/{formats.py,reference.py,ops.py,loader.py,tp2_native.py} implement/reference this model policy. Copyright (c) 2023 DeepSeek. Full text: LICENSES/DeepSeek-MIT.txt. Fetch scripts/manifests identify the separately supplied official source and shards; no weights are included.
+
+External dependencies, not bundled: CUTLASS headers pinned by kernels/grouped/donors.lock.json (BSD-3-Clause), PyTorch, Triton, CUDA/cuBLAS, libibverbs and the exllamav3 runtime. Their own terms apply. The grouped adapter includes CUTLASS headers from an external installation; no CUTLASS source is redistributed here. FlashInfer was evaluated as an alternative and is not included.

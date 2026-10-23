@@ -1,0 +1,32 @@
+{
+ "a": "final_parity_native-hybrid-kx_emu_drafts.pt",
+ "b": "final_parity_native-hybrid-kx2_emu_drafts.pt",
+ "rounds": 453,
+ "A": {
+  "blocks": 568,
+  "block_equal": 0.8838,
+  "first_diff_pos": [
+   11,
+   5,
+   10,
+   15,
+   25
+  ]
+ },
+ "B": {
+  "blocks": 568,
+  "block_equal": 0.8785,
+  "first_diff_pos": [
+   12,
+   9,
+   13,
+   21,
+   14
+  ]
+ },
+ "routing_rows_same_expert_set": {
+  "stage0": 0.9989,
+  "stage1": 0.9778,
+  "stage2": 0.9648
+ }
+}

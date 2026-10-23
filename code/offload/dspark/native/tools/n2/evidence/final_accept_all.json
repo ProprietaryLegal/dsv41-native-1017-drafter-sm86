@@ -1,0 +1,121 @@
+{
+ "captures": "/data/dsv41-offload/dspark/captures/A-capture-20261022/dspark-captures",
+ "arms": [
+  "final_parity_k2-tp2_emu",
+  "final_parity_native-hybrid-kx_emu",
+  "final_parity_native-hybrid-kx2_emu"
+ ],
+ "category": "live",
+ "A": {
+  "blocks": 538,
+  "engine_mean_accept": 1.8104,
+  "final_parity_k2-tp2_emu": {
+   "vs_engine": {
+    "n": 538,
+    "mean_a": 1.8011,
+    "mean_b": 1.8104,
+    "mean_diff": -0.0093,
+    "se_diff": 0.0133,
+    "a_better": 5,
+    "b_better": 5
+   },
+   "vs_first_arm": null
+  },
+  "final_parity_native-hybrid-kx_emu": {
+   "vs_engine": {
+    "n": 538,
+    "mean_a": 1.8234,
+    "mean_b": 1.8104,
+    "mean_diff": 0.013,
+    "se_diff": 0.0242,
+    "a_better": 27,
+    "b_better": 19
+   },
+   "vs_first_arm": {
+    "n": 538,
+    "mean_a": 1.8234,
+    "mean_b": 1.8011,
+    "mean_diff": 0.0223,
+    "se_diff": 0.0209,
+    "a_better": 26,
+    "b_better": 18
+   }
+  },
+  "final_parity_native-hybrid-kx2_emu": {
+   "vs_engine": {
+    "n": 538,
+    "mean_a": 1.8067,
+    "mean_b": 1.8104,
+    "mean_diff": -0.0037,
+    "se_diff": 0.0267,
+    "a_better": 27,
+    "b_better": 23
+   },
+   "vs_first_arm": {
+    "n": 538,
+    "mean_a": 1.8067,
+    "mean_b": 1.8011,
+    "mean_diff": 0.0056,
+    "se_diff": 0.0238,
+    "a_better": 26,
+    "b_better": 22
+   }
+  }
+ },
+ "B": {
+  "blocks": 538,
+  "engine_mean_accept": 1.8104,
+  "final_parity_k2-tp2_emu": {
+   "vs_engine": {
+    "n": 538,
+    "mean_a": 1.8048,
+    "mean_b": 1.8104,
+    "mean_diff": -0.0056,
+    "se_diff": 0.0093,
+    "a_better": 4,
+    "b_better": 3
+   },
+   "vs_first_arm": null
+  },
+  "final_parity_native-hybrid-kx_emu": {
+   "vs_engine": {
+    "n": 538,
+    "mean_a": 1.8253,
+    "mean_b": 1.8104,
+    "mean_diff": 0.0149,
+    "se_diff": 0.0286,
+    "a_better": 33,
+    "b_better": 27
+   },
+   "vs_first_arm": {
+    "n": 538,
+    "mean_a": 1.8253,
+    "mean_b": 1.8048,
+    "mean_diff": 0.0204,
+    "se_diff": 0.0274,
+    "a_better": 32,
+    "b_better": 27
+   }
+  },
+  "final_parity_native-hybrid-kx2_emu": {
+   "vs_engine": {
+    "n": 538,
+    "mean_a": 1.8234,
+    "mean_b": 1.8104,
+    "mean_diff": 0.013,
+    "se_diff": 0.028,
+    "a_better": 30,
+    "b_better": 24
+   },
+   "vs_first_arm": {
+    "n": 538,
+    "mean_a": 1.8234,
+    "mean_b": 1.8048,
+    "mean_diff": 0.0186,
+    "se_diff": 0.0268,
+    "a_better": 29,
+    "b_better": 24
+   }
+  }
+ }
+}

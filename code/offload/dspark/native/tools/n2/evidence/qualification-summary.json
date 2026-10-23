@@ -1,0 +1,93 @@
+{
+ "scope": "Standard N1 benchmark windows; complete TP2 emulation, full real model activations, both shards. No captured-prefix state verdict.",
+ "component_tests_passed": 171,
+ "graph_cases_passed": 8,
+ "ranks": [
+  {
+   "rank": 0,
+   "cfg": {
+    "name": "native-hybrid-kx2",
+    "experts": "packed",
+    "dense": "bf16",
+    "kv_qdq": "official",
+    "wo_a_qdq": true,
+    "combine": "official",
+    "head": "k6",
+    "expanded_stages": [],
+    "expert_kernel": "kx-fused",
+    "markov": "factorized",
+    "markov_rows": 4096,
+    "dense_kernel": "kx-selective",
+    "dense_profile": "measured-small"
+   },
+   "expert_projection_elements": 1036800,
+   "expert_gu_bf16_vs_f64_unequal": 0,
+   "expert_slot_elements": 2304000,
+   "expert_slot_max_relative_f64": 2.6270668219661455e-08,
+   "expert_slot_vs_kx_unequal": 0,
+   "dense_bf16_output_elements": 2252800,
+   "dense_bf16_vs_n1_unequal": 137,
+   "dense_bf16_vs_previous_cublas_unequal": 134,
+   "dense_partial_vs_previous_cublas_unequal": 552374,
+   "dense_partial_max_relative_previous_cublas": 1.184078997132778e-07,
+   "dense_min_bf16_agreement_n1": 0.999072265625,
+   "dense_raw_fp32_max_relative_f64": 6.768847017851519e-07,
+   "dense_partial_fp32_max_relative_f64": 7.594067534787228e-08,
+   "dense_partial_pointwise_failures_1e6": 20806,
+   "paired_bf16_vs_previous_unequal": 12,
+   "paired_hq_vs_previous_unequal": 1,
+   "shared_epilogue_exact_cases": 12,
+   "post_tp_epilogue_exact_cases": 12
+  },
+  {
+   "rank": 1,
+   "cfg": {
+    "name": "native-hybrid-kx2",
+    "experts": "packed",
+    "dense": "bf16",
+    "kv_qdq": "official",
+    "wo_a_qdq": true,
+    "combine": "official",
+    "head": "k6",
+    "expanded_stages": [],
+    "expert_kernel": "kx-fused",
+    "markov": "factorized",
+    "markov_rows": 4096,
+    "dense_kernel": "kx-selective",
+    "dense_profile": "measured-small"
+   },
+   "expert_projection_elements": 1036800,
+   "expert_gu_bf16_vs_f64_unequal": 0,
+   "expert_slot_elements": 2304000,
+   "expert_slot_max_relative_f64": 3.387001044968617e-08,
+   "expert_slot_vs_kx_unequal": 0,
+   "dense_bf16_output_elements": 2252800,
+   "dense_bf16_vs_n1_unequal": 130,
+   "dense_bf16_vs_previous_cublas_unequal": 132,
+   "dense_partial_vs_previous_cublas_unequal": 553057,
+   "dense_partial_max_relative_previous_cublas": 1.198580711736819e-07,
+   "dense_min_bf16_agreement_n1": 0.999072265625,
+   "dense_raw_fp32_max_relative_f64": 6.768847017851519e-07,
+   "dense_partial_fp32_max_relative_f64": 7.706793065007984e-08,
+   "dense_partial_pointwise_failures_1e6": 20081,
+   "paired_bf16_vs_previous_unequal": 15,
+   "paired_hq_vs_previous_unequal": 0,
+   "shared_epilogue_exact_cases": 12,
+   "post_tp_epilogue_exact_cases": 12
+  }
+ ],
+ "published_n1_projection_gate": {
+  "cases": 24,
+  "elements": 2073600,
+  "bf16_differences": 12,
+  "exact_shared_and_post_tp_bit_cases": 48,
+  "minimum_bf16_agreement_vs_n1": 0.9999421296296296,
+  "candidate_matches_fp64_rounding": 12,
+  "n1_matches_fp64_rounding": 0
+ },
+ "cuda_source_sha256": {
+  "kernels/fusedmoe/fusedmoe.cu": "4c0a712489565352e13f5a4bb185b379ea03739bfc7d0decf07f080d86539e14",
+  "kernels/fp8dense/dense.cu": "7a810859758fa8de876cf5f7ce9cbacdd3362b5ade84f44d6b9745d737059867"
+ },
+ "numerical_policy": "Recorded normwise 1e-6 FP32 gates and BF16 agreement gates; not universal pointwise relative 1e-6."
+}

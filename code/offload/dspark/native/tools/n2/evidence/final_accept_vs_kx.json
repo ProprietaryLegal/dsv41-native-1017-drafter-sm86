@@ -1,0 +1,80 @@
+{
+ "captures": "/data/dsv41-offload/dspark/captures/A-capture-20261022/dspark-captures",
+ "arms": [
+  "final_parity_native-hybrid-kx_emu",
+  "final_parity_native-hybrid-kx2_emu"
+ ],
+ "category": "live",
+ "A": {
+  "blocks": 538,
+  "engine_mean_accept": 1.8104,
+  "final_parity_native-hybrid-kx_emu": {
+   "vs_engine": {
+    "n": 538,
+    "mean_a": 1.8234,
+    "mean_b": 1.8104,
+    "mean_diff": 0.013,
+    "se_diff": 0.0242,
+    "a_better": 27,
+    "b_better": 19
+   },
+   "vs_first_arm": null
+  },
+  "final_parity_native-hybrid-kx2_emu": {
+   "vs_engine": {
+    "n": 538,
+    "mean_a": 1.8067,
+    "mean_b": 1.8104,
+    "mean_diff": -0.0037,
+    "se_diff": 0.0267,
+    "a_better": 27,
+    "b_better": 23
+   },
+   "vs_first_arm": {
+    "n": 538,
+    "mean_a": 1.8067,
+    "mean_b": 1.8234,
+    "mean_diff": -0.0167,
+    "se_diff": 0.0163,
+    "a_better": 6,
+    "b_better": 10
+   }
+  }
+ },
+ "B": {
+  "blocks": 538,
+  "engine_mean_accept": 1.8104,
+  "final_parity_native-hybrid-kx_emu": {
+   "vs_engine": {
+    "n": 538,
+    "mean_a": 1.8253,
+    "mean_b": 1.8104,
+    "mean_diff": 0.0149,
+    "se_diff": 0.0286,
+    "a_better": 33,
+    "b_better": 27
+   },
+   "vs_first_arm": null
+  },
+  "final_parity_native-hybrid-kx2_emu": {
+   "vs_engine": {
+    "n": 538,
+    "mean_a": 1.8234,
+    "mean_b": 1.8104,
+    "mean_diff": 0.013,
+    "se_diff": 0.028,
+    "a_better": 30,
+    "b_better": 24
+   },
+   "vs_first_arm": {
+    "n": 538,
+    "mean_a": 1.8234,
+    "mean_b": 1.8253,
+    "mean_diff": -0.0019,
+    "se_diff": 0.0097,
+    "a_better": 6,
+    "b_better": 6
+   }
+  }
+ }
+}
